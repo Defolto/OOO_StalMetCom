@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="../head.css">
+    <meta name="description" content="Продажа металла в Череповце и Санкт-Петербурге. Металл по ГОСТ и ТУ.">
+    <meta http-equiv="content-language" content="ru">
+    <meta name="keywords" content="Металл, ГОСТ, ТУ, заказ, Череповец, купить, продажа, рассрочка, Санкт-Петербурге, доставка, листы, рулоны, услуги, порезка металла">
+    <meta name="author" content="Максим Егоров">
+    <title>Стальметком</title>
+  </head>
+  <body style="background-color: rgb(212, 212, 212);">
+      <div class="bag">
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Форма заявки</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                                <form action="../mail.php" method="POST">
+        
+                                        <div class="form-group">
+                                            <label for="">Введите ваше имя</label>
+                                            <input type="text" class="form-control" id="" name="user_name" placeholder="Иван">
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="">Введите номер телефона</label>
+                                            <input type="text" class="form-control" id="" name="user_phone" placeholder="+7 (999) 99 99 999">
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="">Введите email</label>
+                                            <input type="text" class="form-control" id="" name="user_email" placeholder="mail@mail.ru">
+                                        </div>
+    
+                                        <div class="form-group">
+                                            <label for="">Каким металлом заинтересовались</label>
+                                            <input type="text" class="form-control" id="" name="metal" placeholder="лист г/к 4.0*1000*6000">
+                                        </div>
+    
+                                        <div class="form-group">
+                                            <label for="">Какой услугой заинтересовались</label>
+                                            <input type="text" class="form-control" id="" name="service" placeholder="порезка в лист">
+                                        </div>
+                                    
+                                        <div class="form-group">
+                                            <label for="">Для отдельных вопросов</label>
+                                            <textarea class="form-control" id="" name="user_text" placeholder="Хотел бы с вами сотрудничать"></textarea>
+                                        </div>
+                                        
+                                        <button type="submit" id="check" class="btn btn-primary request">Отправить заявку</button>
+                                    </form>
+                        </div>
+                        </div>
+                    </div>
+                </div>   
+      <div class="container-fuild py-0 fon">
+          <div class="row">
+              <div class="col d-flex justify-content-center d8 mb-2">
+                <a href="../index.html" class="text-center logo">Стальметком</a>
+              </div>    
+          </div>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-light py-0 my-0 fon">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse head_menu" id="navbarNav">
+            <ul class="navbar-nav" style="margin-left: 25px;">
+            <li class="nav-item dropdown podmenu" style="border-radius: 10px 0px 0px 10px">
+            <a class="nav-link dropdown-toggle" href="../index.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Металлопрокат
+            </a>
+            <div class="dropdown-menu" style="transform: skewX(25deg); z-index: 60;" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">В Череповце</a>
+                <a class="dropdown-item" href="#">В Санкт-Петербурге</a>
+            </div>
+            </li>
+            <li class="nav-item podmenu">
+                <a class="nav-link" href="../gost_ty/index.html">ГОСТ и ТУ</a>
+            </li>
+            <li class="nav-item podmenu">
+                <a class="nav-link" href="../service/index.html">Услуги</a>
+            </li>
+            <li class="nav-item podmenu" style="border-radius: 0px 10px 10px 0px">
+                <a class="nav-link spec" href="../spec/index.html">Спец. предложения</a>
+            </li>
+            </ul>
+        </div>
+        <div class="navbar-text contact">
+                <div class="media">
+                    <img src="../img/phone.png" class="mr-2 align-self-center" alt="..." width="20px" height="20px">
+                    <div class="media-body">
+                        +7 (911) 517-00-21                    
+                    </div>
+                </div>
+                <div class="media">
+                    <img src="../img/email.png" class="mr-2 align-self-center" alt="..." width="20px" height="20px">
+                    <div class="media-body">
+                        egor0022@rambler.ru                    
+                    </div>
+                </div>
+        </div>
+        </nav>
+        <div class="container-fuild mx-3">
+            <div class="row">
+                <div class="col-xl-2 text-center">
+                    <ul class="list-group list-group-flush mt-3 text-center">
+                        <h3>Ассортимент</h3>
+                        <li id="list_gk" class="list-group-item active1">Лист г/к</li>
+                        <li id="truba_gk" class="list-group-item">Труба г/к</li>
+                        <li id="rulon_hk" class="list-group-item">Рулон х/к</li>
+                    </ul>
+                    <!-- <button type="button" class="btn btn-primary mt-5" data-toggle="modal" data-target="#exampleModal">
+                            Заказать
+                    </button> -->
+                    <div style="display: flex;">
+                        <p class="button mt-5" data-toggle="modal" data-target="#exampleModal">Заказать</p>
+                    </div>
+                </div>
+                <div class="col-xl-10">
+                    <table id="myTable" class="table table-bordered table-hover text-center list_gk">
+                    <thead>
+                        <tr>
+                            <th scope="col">Наименование &#8659</th>
+                            <th scope="col">ГОСТ и ТУ &#8659</th>
+                            <th scope="col">Марка стали &#8659</th>
+                            <th scope="col">Наличие &#8659</th>
+                            <th scope="col">Цена &#8659</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">4.0*1000*6000</th>
+                            <td>ГОСТ</td>
+                            <td>ЗСП</td>
+                            <td>под заказ</td>
+                            <td>39000</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4.0*1500*6000</th>
+                            <td>ГОСТ</td>
+                            <td>ЗСП</td>
+                            <td>под заказ</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5.0*1500*3000</th>
+                            <td>ТУ 14-105-808-88 кк9</td>
+                            <td>-</td>
+                            <td>под заказ</td>
+                            <td>39000</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6.0*1500*3000</th>
+                            <td>ТУ 14-105-808-88 кк9</td>
+                            <td>-</td>
+                            <td>под заказ</td>
+                            <td>39000</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">8.0*1500*3000</th>
+                            <td>ТУ 14-105-808-88 кк9</td>
+                            <td>-</td>
+                            <td>под заказ</td>
+                            <td>39000</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">10.0*1500*3000</th>
+                            <td>ТУ 14-105-808-88 кк9</td>
+                            <td>-</td>
+                            <td>под заказ</td>
+                            <td>39000</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">12.0*1500*3000</th>
+                            <td>ТУ 14-105-808-88 кк9</td>
+                            <td>-</td>
+                            <td>под заказ</td>
+                            <td>38000</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">16.0*1500*3000</th>
+                            <td>ТУ 14-105-808-88 кк9</td>
+                            <td>-</td>
+                            <td>под заказ</td>
+                            <td>38000</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5.0*1500*6000</th>
+                            <td>ГОСТ</td>
+                            <td>ЗСП</td>
+                            <td>под заказ</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6.0*1500*6000</th>
+                            <td>ГОСТ</td>
+                            <td>ЗСП</td>
+                            <td>под заказ</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">8.0*1500*6000</th>
+                            <td>ГОСТ</td>
+                            <td>ЗСП</td>
+                            <td>под заказ</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">10.0*1500*6000</th>
+                            <td>ГОСТ</td>
+                            <td>ЗСП</td>
+                            <td>под заказ</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                    </table>
+                    <table id="myTable1" class="table table-bordered table-hover text-center none truba_gk">
+                    <thead>
+                        <tr>
+                            <th scope="col">Наименование &#8659</th>
+                            <th scope="col">ГОСТ и ТУ &#8659</th>
+                            <th scope="col">Марка стали &#8659</th>
+                            <th scope="col">Наличие &#8659</th>
+                            <th scope="col">Цена &#8659</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Труба квадратная 15*15*1.35 (6мм)</th>
+                            <td>ТУ 14-105-737</td>
+                            <td>1пс</td>
+                            <td>в наличии</td>
+                            <td>46000</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Труба квадратная 20*20*1.5 (6мм)</th>
+                            <td>ТУ 14-105-737</td>
+                            <td>1пс</td>
+                            <td>в наличии</td>
+                            <td>44000</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Труба квадратная 40*40*1.5 (6мм)</th>
+                            <td>ТУ 14-105-737</td>
+                            <td>1пс</td>
+                            <td>в наличии</td>
+                            <td>44000</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Труба прямоугольная 40*20*1.5 (6мм)</th>
+                            <td>ТУ 14-105-737</td>
+                            <td>1пс</td>
+                            <td>в наличии</td>
+                            <td>44000</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Труба прямоугольная 40*20*1.35 (6мм)</th>
+                            <td>ТУ 14-105-737</td>
+                            <td>1пс</td>
+                            <td>в наличии</td>
+                            <td>45500</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Труба прямоугольная 40*25*1.5 (6мм)</th>
+                            <td>ТУ 14-105-737</td>
+                            <td>1пс</td>
+                            <td>в наличии</td>
+                            <td>44000</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Труба прямоугольная 60*40*1.5 (6мм)</th>
+                            <td>ТУ 14-105-737</td>
+                            <td>1пс</td>
+                            <td>в наличии</td>
+                            <td>44000</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Труба круглая 108*3.5 (12мм)</th>
+                            <td>ТУ 14-105-737</td>
+                            <td>1пс</td>
+                            <td>в наличии</td>
+                            <td>40800</td>
+                        </tr>
+                    </tbody>
+                    </table>
+                    <table id="myTable2" name='second' class="table table-bordered table-hover text-center none rulon_hk">
+                    <thead>
+                        <tr>
+                            <th scope="col">Наименование &#8659</th>
+                            <th scope="col">ГОСТ и ТУ &#8659</th>
+                            <th scope="col">Марка стали &#8659</th>
+                            <th scope="col">Наличие &#8659</th>
+                            <th scope="col">Цена &#8659</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+        <tr>
+            <th scope="row">рулон х\к 0,7х1250</th>
+            <td>16523-89</td>
+            <td>08ПС</td>
+            <td>в наличии</td>
+            <td>51100</td>
+        </tr>
+        <tr>
+            <th scope="row">рулон х\к 0,8х1250</th>
+            <td>16523-89</td>
+            <td>08ПС</td>
+            <td>в наличии</td>
+            <td>51100</td>
+        </tr>
+        <tr>
+            <th scope="row">рулон х\к 1,0х1250</th>
+            <td>16523-89</td>
+            <td>08ПС</td>
+            <td>в наличии</td>
+            <td>50900</td>
+        </tr>
+        <tr>
+            <th scope="row">рулон х\к 1,2х1250</th>
+            <td>16523-89</td>
+            <td>08ПС</td>
+            <td>в наличии</td>
+            <td>50900</td>
+        </tr>
+        <tr>
+            <th scope="row">рулон х\к 1,5х1250</th>
+            <td>16523-89</td>
+            <td>08ПС</td>
+            <td>в наличии</td>
+            <td>50900</td>
+        </tr>
+        <tr>
+            <th scope="row">рулон х\к 2,5х1250</th>
+            <td>16523-89</td>
+            <td>08ПС</td>
+            <td>в наличии</td>
+            <td>50500</td>
+        </tr>
+        <tr>
+            <th scope="row">рулон х\к 3,0х1250</th>
+            <td>16523-89</td>
+            <td>08ПС</td>
+            <td>в наличии</td>
+            <td>50500</td>
+        </tr>
+    </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        </div>
+        <script src="../JQuery.js"></script>     
+        <script src="main.js"></script>
+        <script src="../bootstrap/js/bootstrap.min.js"></script>
+        <script src="../tablesorter.js"></script>
+</body>
+</html>

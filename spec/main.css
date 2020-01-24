@@ -1,0 +1,4 @@
+tbody th,
+tbody td{
+    cursor: pointer;
+}

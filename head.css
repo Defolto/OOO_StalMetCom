@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Orbitron');
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville|Merriweather');
+@import url('https://fonts.googleapis.com/css?family=Cardo|Merriweather|Rokkitt');
+@import url('https://fonts.googleapis.com/css?family=Exo+2|Merriweather');
+@import url('https://fonts.googleapis.com/css?family=Cormorant+SC|Ledger|Merriweather|Spectral+SC');
+
+body{
+    overflow-x: hidden !important;
+    width: 100%;
+    height: 100%;
+    background-color: white !important;
+}
+
+.bag{
+    overflow-x: hidden !important;
+}
+
+.fon{
+    background-color: rgb(255, 255, 255);
+} 
+
+.logo{
+    font-size: 55px;
+    font-family: 'Spectral SC', serif;
+    color: rgb(8, 115, 238);
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px #424242, 1px -1px #424242, -1px 1px #424242, -1px -1px #424242, 3px 3px 6px rgba(0,0,0,.5);
+}
+
+.logo:hover{
+    color: rgb(8, 115, 238);
+}
+
+.d8 .logo {
+  text-align: center;
+}
+.d8 .logo:before {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 50%;
+  margin-left: -3px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgb(8, 115, 238);
+  z-index: 2;
+}
+.d8 .logo:after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  margin-left: -25%;
+  width: 50%;
+  height: 2px;
+  background: rgb(48, 48, 48);
+}
+
+a{
+    text-decoration: none !important;
+}
+
+.head_menu{
+    font-family: 'Times New Roman', Times, serif !important;
+    font-size: 17px;
+}
+
+.podmenu{
+    margin-right: 1.8px;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    transform: skewX(-25deg);
+    background-color: rgb(8, 115, 238);
+    padding: 7px 20px;
+    z-index: 1 !important;
+    transition: .6s;
+    box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5), 1px 1px 5px rgba(255, 255, 255, 1);
+}
+
+.podmenu:hover{
+    background-color: rgb(5, 83, 172);
+}
+
+.nav-link{
+    color: white !important;
+    transform: skewX(25deg);
+    padding: 0px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Rokkitt');
+.contact{
+    color: rgb(8, 115, 238) !important;
+    font-size: 22px; 
+    letter-spacing: 0.5px;
+    margin-right: 65px;
+    font-family: 'Rokkitt', serif;
+    font-weight: 600;
+}
+
+@keyframes spec{
+    0%{
+        color: white;
+    }
+    50%{
+        color: red;
+    }
+    100%{
+        color: white;
+    }
+}
+
+.spec{
+    animation: spec 1.5s ease-in-out infinite;
+}
+

@@ -1,0 +1,12 @@
+li{
+    list-style-type: none;
+}
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    color: rgb(109, 109, 109);
+}
+
+span{
+    font-weight: bold;
+}

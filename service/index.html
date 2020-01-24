@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../head.css">
+    <link rel="stylesheet" href="main.css">
+    <meta name="description" content="Услуги по обработке металла в Череповце. Порезка и изготовление профлиста.">
+    <meta http-equiv="content-language" content="ru">
+    <meta name="keywords" content="Металл, ГОСТ, ТУ, заказ, Череповец, купить, продажа, рассрочка, Санкт-Петербурге, доставка, листы, рулоны, услуги, порезка металла">
+    <meta name="author" content="Максим Егоров">
+    <title>Стальметком</title>
+  </head>
+  <body>
+      <div class="bag">
+      <div class="container-fuild pb-0 fon">
+          <div class="row">
+              <div class="col d-flex justify-content-center d8 mb-2">
+                <a href="../index.html" class="text-center logo">Стальметком</a>
+              </div>    
+          </div>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-light py-0 my-0 fon">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse head_menu" id="navbarNav">
+            <ul class="navbar-nav" style="margin-left: 25px;">
+            <li class="nav-item dropdown podmenu" style="border-radius: 10px 0px 0px 10px">
+            <a class="nav-link dropdown-toggle" href="../index.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Металлопрокат
+            </a>
+            <div class="dropdown-menu" style="transform: skewX(25deg);" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="../metal_rolling/index.html">В Череповце</a>
+                <a class="dropdown-item" href="#">В Санкт-Петербурге</a>
+            </div>
+            </li>
+            <li class="nav-item podmenu">
+                <a class="nav-link" href="../gost_ty/index.html">ГОСТ и ТУ</a>
+            </li>
+            <li class="nav-item podmenu">
+                <a class="nav-link" href="#">Услуги</a>
+            </li>
+            <li class="nav-item podmenu" style="border-radius: 0px 10px 10px 0px">
+                <a class="nav-link spec" href="../spec/index.html">Спец. предложения</a>
+            </li>
+            </ul>
+        </div>
+        <div class="navbar-text contact">
+                <div class="media">
+                    <img src="../img/phone.png" class="mr-2 align-self-center" alt="..." width="20px" height="20px">
+                    <div class="media-body">
+                        +7 (911) 517-00-21                    
+                    </div>
+                </div>
+                <div class="media">
+                    <img src="../img/email.png" class="mr-2 align-self-center" alt="..." width="20px" height="20px">
+                    <div class="media-body">
+                        egor0022@rambler.ru                    
+                    </div>
+                </div>
+        </div>
+        </nav>
+        <div class="container-fuild mx-3 mt-2">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="../img/eee.jpg" alt="" width="100%" height="100%">
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="text-center">Наши услуги</h3>
+                    <ul>
+                        <li>Поперечная порезка х\к рулонов в лист</li>
+                        <li>Продольная порезка х\к рулонов в штрипс</li>
+                        <li>Изготовление профлиста С8 из оцинкованных рулонов</li>
+                        <li>Изготовление профлиста С8 из полимерных рулонов</li>
+                    </ul>
+                    <div style="display: flex;">
+                            <p class="button mt-3" data-toggle="modal" data-target="#exampleModal">Заказать</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Форма заявки</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="../mail.php" method="POST">
+        
+                                    <div class="form-group">
+                                        <label for="">Введите ваше имя</label>
+                                        <input type="text" class="form-control" id="" name="user_name" placeholder="Иван">
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="">Введите номер телефона</label>
+                                        <input type="text" class="form-control" id="" name="user_phone" placeholder="+7 (999) 99 99 999">
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="">Введите email</label>
+                                        <input type="text" class="form-control" id="" name="user_email" placeholder="mail@mail.ru">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="">Каким металлом заинтересовались</label>
+                                        <input type="text" class="form-control" id="" name="metal" placeholder="лист г/к 4.0*1000*6000">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="">Какой услугой заинтересовались</label>
+                                        <input type="text" class="form-control" id="" name="service" placeholder="порезка в лист">
+                                    </div>
+                                
+                                    <div class="form-group">
+                                        <label for="">Для отдельных вопросов</label>
+                                        <textarea class="form-control" id="" name="user_text" placeholder="Хотел бы с вами сотрудничать"></textarea>
+                                    </div>
+                                    
+                                    <button type="submit" id="check" class="btn btn-primary request">Отправить заявку</button>
+                                </form>
+                        </div>
+                        </div>
+                    </div>
+                </div>   
+        </div>
+        </div>
+        <script src="../JQuery.js"></script>     
+        <script src="main.js"></script>
+        <script src="../bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
